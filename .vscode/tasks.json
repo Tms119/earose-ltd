@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "earose-ltd-main",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - earose-ltd-main",
+			"detail": "tsc && vite build"
+		}
+	]
+}
