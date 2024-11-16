@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import { motion, HTMLMotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { buttonHoverVariant } from './motion';
@@ -16,7 +16,7 @@ const buttonVariants = ({
   const baseStyles = 'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
   
   const variants = {
-    default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+    default: 'bg-blue-600 text-white hover:bg-blue-700',
     outline: 'border border-input hover:bg-accent hover:text-accent-foreground',
     white: 'bg-white text-black hover:bg-gray-100',
   };
@@ -35,7 +35,7 @@ const buttonVariants = ({
   );
 };
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, children, variant = 'default', size = 'default', ...props }, ref) => {
     return (
       <motion.button
