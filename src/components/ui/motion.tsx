@@ -98,4 +98,7 @@ export const revealVariant = {
       ease: "easeOut"
     }
   }
-}; 
+};
+
+export const MotionDiv = motion.div;
+export const MotionButton = motion.button; 
