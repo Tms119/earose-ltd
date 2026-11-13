@@ -2,7 +2,7 @@
 
 Corporate website for Earose Industries Limited, an industrial packaging solutions and manufacturing provider.
 
-**Live:** https://earose.netlify.app
+**Live:** https://earoseltd.com
 
 ---
 
